@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Te amo como Lamine Yamal ama el fútbol ❤️</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+height:100vh;
+background:linear-gradient(135deg,#001f5b,#a50044);
+font-family:Georgia,serif;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+
+/* REGALO */
+
+.regalo{
+text-align:center;
+color:white;
+cursor:pointer;
+}
+
+
+.caja{
+width:170px;
+height:120px;
+background:#d4af37;
+position:relative;
+margin:auto;
+border-radius:10px;
+box-shadow:0 0 20px gold;
+animation:latido 2s infinite;
+}
+
+
+.tapa{
+position:absolute;
+width:190px;
+height:35px;
+background:#ffd700;
+top:-25px;
+left:-10px;
+border-radius:10px;
+}
+
+
+.lazo{
+position:absolute;
+height:120px;
+width:30px;
+background:#e60026;
+left:70px;
+}
+
+
+@keyframes latido{
+
+50%{
+transform:scale(1.08);
+}
+
+}
+
+
+/* LIBRO */
+
+.libro{
+
+display:none;
+width:90%;
+max-width:420px;
+height:550px;
+background:white;
+border-radius:20px;
+box-shadow:0 0 30px black;
+overflow:hidden;
+position:relative;
+
+}
+
+
+.pagina{
+
+display:none;
+height:100%;
+padding:25px;
+text-align:center;
+overflow:auto;
+
+}
+
+
+.pagina.activa{
+
+display:block;
+animation:aparecer 1s;
+
+}
+
+
+@keyframes aparecer{
+
+from{
+opacity:0;
+transform:translateX(50px);
+}
+
+to{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+
+h1{
+
+color:#a50044;
+
+}
+
+
+.frase{
+
+font-size:22px;
+color:#222;
+
+}
+
+
+img{
+
+width:85%;
+border-radius:15px;
+margin-top:15px;
+
+}
+
+
+button{
+
+background:#a50044;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+margin-top:20px;
+
+}
+
+
+.corazon{
+
+position:absolute;
+font-size:25px;
+animation:flotar 5s infinite;
+
+}
+
+
+@keyframes flotar{
+
+from{
+transform:translateY(600px);
+opacity:1;
+}
+
+to{
+transform:translateY(-100px);
+opacity:0;
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="regalo" onclick="abrirRegalo()">
+
+<div class="caja">
+
+<div class="tapa"></div>
+<div class="lazo"></div>
+
+</div>
+
+<h2>🎁 Abrí mi regalo ❤️</h2>
+
+</div>
+
+
+<div class="libro" id="libro">
+  <!-- PÁGINA 1 -->
+
+<div class="pagina activa">
+
+<h1>Para alguien especial ❤️</h1>
+
+<p class="frase">
+Te amo como amas a...
+</p>
+
+<p>
+Abrí este pequeño regalo hecho con mucho cariño 💙❤️
+</p>
+
+<button onclick="siguientePagina()">
+Abrir libro 📖
+</button>
+
+</div>
+
+
+<!-- PÁGINA 2 -->
+
+<div class="pagina">
+
+<h1>Lamine Yamal ⚽❤️</h1>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Lamine_Yamal_2025.jpg/640px-Lamine_Yamal_2025.jpg" 
+alt="Lamine Yamal">
+
+<p class="frase">
+Te amo como Lamine Yamal ama al fútbol ⚽❤️
+</p>
+
+<p>
+Con la misma pasión, ilusión y ganas con las que él entra a la cancha, yo quiero demostrarte lo mucho que significás para mí.
+</p>
+
+<button onclick="siguientePagina()">
+Siguiente ➡️
+</button>
+
+</div>
+
+
+
+<!-- PÁGINA 3 -->
+
+<div class="pagina">
+
+<h1>Su historia 💙❤️</h1>
+
+<p>
+
+Lamine Yamal nació en España y desde muy pequeño mostró un gran talento para el fútbol.
+Entró a la cantera del FC Barcelona cuando era niño y con esfuerzo logró llegar al primer equipo.
+
+</p>
+
+<p>
+
+Su forma de jugar demuestra confianza, creatividad y amor por este deporte.
+
+</p>
+
+
+<button onclick="siguientePagina()">
+Siguiente ➡️
+</button>
+
+
+</div>
+
+
+
+<!-- PÁGINA 4 -->
+
+<div class="pagina">
+
+<h1>Mi mensaje para vos ❤️</h1>
+
+<p class="frase">
+
+"Así como Lamine nunca deja de luchar por sus sueños, yo nunca voy a dejar de valorar tenerte en mi vida."
+
+</p>
+
+
+<p>
+
+Gracias por estar, por hacerme feliz y por compartir momentos conmigo 💙❤️
+
+</p>
+
+
+<button onclick="siguientePagina()">
+Siguiente ➡️
+</button>
+
+
+</div>
+<!-- PÁGINA 5 -->
+
+<div class="pagina">
+
+<h1>Mi regalo para vos ❤️</h1>
+
+<p class="frase">
+
+"Te amo como Lamine Yamal ama al fútbol, porque cuando algo importa de verdad, se cuida, se disfruta y se da todo por ello." ⚽❤️
+
+</p>
+
+
+<p>
+
+Gracias por formar parte de mi vida. 
+Espero que este pequeño libro te recuerde lo especial que sos para mí. 💙❤️
+
+</p>
+
+
+<h2>Siempre vos ✨</h2>
+
+
+<button onclick="paginaAnterior()">
+⬅️ Volver
+</button>
+
+
+</div>
+
+
+</div> <!-- cierre del libro -->
+
+
+<!-- MÚSICA -->
+
+<audio id="musica" loop>
+
+<!-- Acá podés poner tu canción -->
+<source src="TU_CANCION.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+<script>
+
+
+let paginaActual = 0;
+
+let paginas = document.querySelectorAll(".pagina");
+
+
+
+function abrirRegalo(){
+
+document.querySelector(".regalo").style.display="none";
+
+document.getElementById("libro").style.display="block";
+
+
+document.getElementById("musica").play();
+
+crearCorazones();
+
+}
+
+
+
+function siguientePagina(){
+
+paginas[paginaActual].classList.remove("activa");
+
+paginaActual++;
+
+
+if(paginaActual >= paginas.length){
+
+paginaActual = paginas.length - 1;
+
+}
+
+
+paginas[paginaActual].classList.add("activa");
+
+
+}
+
+
+
+function paginaAnterior(){
+
+paginas[paginaActual].classList.remove("activa");
+
+
+paginaActual--;
+
+
+if(paginaActual < 0){
+
+paginaActual = 0;
+
+}
+
+
+paginas[paginaActual].classList.add("activa");
+
+}
+
+
+
+
+function crearCorazones(){
+
+
+setInterval(()=>{
+
+
+let corazon=document.createElement("div");
+
+
+corazon.className="corazon";
+
+corazon.innerHTML="❤️";
+
+
+corazon.style.left=Math.random()*100+"%";
+
+
+document.body.appendChild(corazon);
+
+
+
+setTimeout(()=>{
+
+corazon.remove();
+
+},5000);
+
+
+
+},700);
+
+
+}
+
+
+
+  </script>
+ <source src="Ojitos Lindos.mp3" type="audio/mpeg"> 
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Lamine_Yamal_2025.jpg/640px-Lamine_Yamal_2025.jpg" 
+alt="Lamine Yamal">
+  <h1>Para juanjo💙❤️</h1>
